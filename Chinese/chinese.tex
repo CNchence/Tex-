@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{ctex} % 必须使用 ctex 宏包
+\setmainfont{Times New Roman} % 全局西文用 Times New Roman 字体
+\setCJKmainfont{STSong} % 全局中文用 Adobe Song Std 字体
+%\newfontinstance {\courier} {Courier} % 使用 Courier 字体
+\newfontinstance {\garamond} {Garamond} % 使用 Garamond 字体
+%\newfontinstance {\umpush} {Umpush} % 使用 Umpush 字体
+\newfontinstance {\iwona} {Iwona} % 使用 Iwona 字体
+\newfontinstance {\algerian} {Algerian} % 使用 Algerian 字体
+\setCJKfamilyfont{hwxk}{STXingkai} % 使用 STXingkai 华文行楷字体
+\newcommand {\stxk} {\CJKfamily{hwxk}}
+\setCJKfamilyfont{hwlt}{STLiti} % 使用 STLiti 华文隶书字体
+\newcommand {\stlt} {\CJKfamily{hwlt}}
+\setCJKfamilyfont{fzjz}{ 方正剪纸简体 } % 使用方正剪纸字体
+\newcommand {\fzjz} {\CJKfamily{fzjz}}
+\setCJKfamilyfont{fzse}{ 方正少儿简体 } % 使用方正少儿简体
+\newcommand {\fzse} {\CJKfamily{fzse}}
+\begin{document}
+ABCDEFGHIJ \par % \par 命令的含义是另起一段，与字体无关
+%{\courier ABCDEFGHIJ} \par
+{\garamond ABCDEFGHIJ} \par
+{\iwona ABCDEFGHIJ} \par
+{\algerian ABCDEFGHIJ} \par
+%{\umpush ABCDEFGHIJ} \par
+甲乙丙丁戊己庚辛壬葵 \par
+{\stxk 甲乙丙丁戊己庚辛壬葵 } \par
+{\stlt 甲乙丙丁戊己庚辛壬葵 } \par
+我是老中医 \par
+%{\fzjz 甲乙丙丁戊己庚辛壬葵 } \par
+%{\fzse 甲乙丙丁戊己庚辛壬葵 }
+\end{document}
